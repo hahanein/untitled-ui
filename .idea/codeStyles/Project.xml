@@ -6,6 +6,8 @@
         <option name="SMART_TABS" value="true" />
       </value>
     </option>
+    <option name="LINE_SEPARATOR" value="&#10;" />
+    <option name="RIGHT_MARGIN" value="80" />
     <HTMLCodeStyleSettings>
       <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
       <option name="HTML_ENFORCE_QUOTES" value="true" />

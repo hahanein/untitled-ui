@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+button:focus-visible,
+input:focus-visible {
+    @apply outline outline-offset-2 outline-slate-400 dark:outline-slate-400;
+}
+
+button[aria-invalid="true"]:focus-visible,
+input[aria-invalid="true"]:focus-visible {
+    @apply outline-red-400 dark:outline-pink-700;
+}
