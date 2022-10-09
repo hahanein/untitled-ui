@@ -11,6 +11,7 @@ import Tabs from "./Tabs";
 import MagnifyingGlassIcon from "@heroicons/react/20/solid/MagnifyingGlassIcon";
 import PencilSquareIcon from "@heroicons/react/20/solid/PencilSquareIcon";
 import {Item} from "react-stately";
+import Action from "./Action";
 
 export const Badges: React.FC = () => (
 	<div className="flex flex-row gap-2">
@@ -22,7 +23,7 @@ export const Badges: React.FC = () => (
 	</div>
 );
 
-export const Buttons: React.FC = () => (
+export const ButtonsAndActions: React.FC = () => (
 	<div className="flex flex-col gap-16">
 		<div className="grid grid-cols-3 gap-8">
 			<Button>Button default</Button>
@@ -35,7 +36,9 @@ export const Buttons: React.FC = () => (
 			<Button variant="danger" isDisabled>
 				Button danger
 			</Button>
-			<Button icon={<PencilSquareIcon />}>Icon action</Button>
+			<Action icon={<PencilSquareIcon />}>Icon action</Action>
+			<Action>Text action</Action>
+			<Action isDisabled>Disabled text action</Action>
 		</div>
 		<div className="dark grid grid-cols-3 gap-8 bg-black p-8 text-white">
 			<span className="col-span-3 underline underline-offset-8">Dark</span>
@@ -49,6 +52,9 @@ export const Buttons: React.FC = () => (
 			<Button variant="danger" isDisabled>
 				Button danger
 			</Button>
+			<Action icon={<PencilSquareIcon />}>Icon action</Action>
+			<Action>Text action</Action>
+			<Action isDisabled>Disabled text action</Action>
 		</div>
 	</div>
 );
@@ -68,16 +74,16 @@ export const Headers: React.FC = () => (
 			<div className="ml-1 h-full w-[1px] bg-neutral-600">&nbsp;</div>
 			<QuestionMarkCircleIcon
 				height={28}
-				className="cursor-pointer hover:text-orange-300"
+				className="transition-150 cursor-pointer transition-colors hover:text-orange-300"
 			/>
 			<UserCircleIcon
 				height={28}
-				className="cursor-pointer hover:text-orange-300"
+				className="transition-150 cursor-pointer transition-colors hover:text-orange-300"
 			/>
 			<span className="font-semibold">01:42</span>
 			<ArrowRightOnRectangleIcon
 				height={28}
-				className="cursor-pointer hover:text-orange-300"
+				className="cursor-pointer transition-colors duration-150 hover:text-orange-300"
 			/>
 		</div>
 	</Header>
