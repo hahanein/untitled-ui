@@ -142,15 +142,28 @@ export const TextFields: React.FC = () => (
 );
 
 export const TabList: React.FC = () => (
-	<Tabs aria-label="History of Ancient Rome">
-		<Item key="FoR" title="Founding of Rome">
-			Arma virumque cano, Troiae qui primus ab oris.
-		</Item>
-		<Item key="MaR" title="Monarchy and Republic">
-			Senatus Populusque Romanus.
-		</Item>
-		<Item key="Emp" title="Empire">
-			Alea jacta est.
-		</Item>
-	</Tabs>
+	<div className="flex flex-col gap-4">
+		<Tabs aria-label="History of Ancient Rome">
+			<Item key="FoR" title="Founding of Rome">
+				Arma virumque cano, Troiae qui primus ab oris.
+			</Item>
+			<Item key="MaR" title="Monarchy and Republic">
+				Senatus Populusque Romanus.
+			</Item>
+			<Item key="Emp" title="Empire">
+				Alea jacta est.
+			</Item>
+		</Tabs>
+		<Tabs aria-label="History of Ancient Rome" aria-orientation="vertical">
+			<Item key="FoR" title="Founding of Rome">
+				Arma virumque cano, Troiae qui primus ab oris.
+			</Item>
+			<Item key="MaR" title="Monarchy and Republic">
+				Senatus Populusque Romanus.
+			</Item>
+			<Item key="Emp" title="Empire">
+				Alea jacta est.
+			</Item>
+		</Tabs>
+	</div>
 );
